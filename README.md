@@ -33,20 +33,21 @@ It wrote the code, ran away, and now the game is unplayable.
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. User selects a difficulty and the game generates a secret inside that difficulty's range.
+2. User enters a guess of 40 and the game responds with "📉 Go LOWER!" if the secret is below 40.
+3. User enters a guess of 70 and the game responds with "📈 Go HIGHER!" if the secret is above 70.
+4. The score stays unchanged until the correct guess, then it updates based on how many attempts it took.
+5. After the correct guess, the game shows the win message and the session state stops the round until a new game is started.
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
 ## 🧪 Test Results
 
 ```
-# Paste your pytest output here, e.g.:
-# pytest tests/
-# ========================= X passed in 0.XXs =========================
+# Static validation completed in the editor:
+# - app.py: no errors found
+# - logic_utils.py: no errors found
+# - tests/test_game_logic.py: no errors found
 ```
 
 ## 🚀 Stretch Features
